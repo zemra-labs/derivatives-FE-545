@@ -3,6 +3,28 @@
 #include <string>
 using namespace std;
 
+char acharacter = 'a';
+
+int sum(int a, int b) {
+    return a + b;
+}
+
+// pass by reference
+void timestwo(int &a, int &b) {
+    a *= 10;
+    b *= 10;
+}
+
+int divide(int a=10, int b=2) {
+    int r = a/b;
+    return r;
+}
+
+// can also pass void to parameter list when
+// you don't want to pass anything
+void printCharacter(char a) {
+    cout << a << " is the character" << endl;
+}
 
 int main() {
     
@@ -47,8 +69,24 @@ int main() {
         default:
             cout << " x was not found" << endl;
     }
+    cout << myname << endl;
     
+    int total = sum(10, 20);
+    cout << total << endl;
     
+    cout << acharacter << endl;
+    
+    printCharacter(acharacter);
+    
+    int d = 4;
+    int e = 5;
+    
+    timestwo(d,e);
+    cout << d << endl;
+    cout << e << endl;
 
+    cout << divide() << endl;
+    
+    
     return 0;
 }
