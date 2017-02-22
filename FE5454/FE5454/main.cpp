@@ -25,7 +25,7 @@ int divide(int a=10, int b=2) {
 void printCharacter(char a) {
     cout << a << " is the character" << endl;
 }
-
+/*
 int main() {
     
     string myname = "Andi Mitre";
@@ -90,3 +90,4 @@ int main() {
     
     return 0;
 }
+*/
