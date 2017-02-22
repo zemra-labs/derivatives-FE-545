@@ -7,29 +7,35 @@ using namespace std;
 // Use your platform to create a project that input 10 stock Level1 quotes from your keyboard, save the quotes into an file at first, display them in monitor,  and then load from the file that you save. The stock quote includes stock name(12 characters), Best bid price and size, ask price and size, yesterday close price, open price, last price, and total volume. The stock quote must be handled by a structure.
 
 
-string getQuotes() {
+void loadQuotes(string stocks[], int length) {
     // input 10 stock quotes from keyboard
-    string stock1, stock2, stock3, stock4, stock5, stock6, stock7, stock8, stock9, stock10;
     cout << "Please provide 10 level1 stock quotes" << endl;
-    //cin >> stock1 >> stock2 >> stock3 >> stock4 >> stock5 >> stock6 >> stock7 >> stock8 >> stock9 >> stock10;
-    cin >> stock1;
-    return stock1;
+    for (int i = 0; i < 10; i++) {
+        cin >> stocks[i];
+    }
 }
 
-void saveToFile(string data) {
+void saveToFile(string stocks[], int length) {
     // save quotes to file
-
     fstream textfile;
     textfile.open("stock_data.txt");
-    textfile << data << endl;
+    if (textfile.is_open()) {
+        for(int x = 0; x < length; x++) {
+            textfile << stocks[x] << " ";
+        }
+    }
     textfile.close();
 }
 
-void display(string data) {
-    cout << data << endl;
+void display(string arr[], int length) {
+    // display each element to screen
+    for (int i = 0; i < length; i++) {
+        cout << arr[i] << endl;
+    }
 }
 
 void loadFromFile() {
+    // load data from file
     fstream textfile;
     textfile.open(("stock_data.txt"));
     if (textfile.is_open()) {
@@ -38,14 +44,16 @@ void loadFromFile() {
             cout << data << endl;
         }
     } else {
-        cout << "error opening file" << endl;
+        cout << "Error opening file" << endl;
     }
 }
 
 int main() {
-    string result = getQuotes();
-    saveToFile(result);
-    display(result);
+    // create string array to hold stock level data
+    string stocks[10];
+    loadQuotes(stocks, 10);
+    saveToFile(stocks, 10);
+    display(stocks, 10);
     loadFromFile();
     
     return 0;
