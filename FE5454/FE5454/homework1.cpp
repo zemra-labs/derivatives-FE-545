@@ -21,7 +21,7 @@ int main() {
     
 
     // typical scenarios 10 students 5 seats should return min num. of rows = 2, last row = 5 students
-    // 20 students 15 seats should return min num. of rows = 2, last row = 5 students
+    // 100 students 15 seats should return min num. of rows = 7, last row = 10 students
     
     while(reach) {
         switch (seats) {
