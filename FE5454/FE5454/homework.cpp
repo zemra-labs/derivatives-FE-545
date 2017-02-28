@@ -101,16 +101,16 @@ void loadFromFile() {
     }
 }
 
-int main() {
-    // create string array to hold stock level data
-    string stocks[10];
-    double stock_details [10][8] = {0};
-    loadQuotes(stocks, stock_details, 10);
-    saveToFile(stocks, stock_details, 10);
-    //displayStocks(stocks, 10);
-    displayAll(stocks, stock_details, 10);
-    loadFromFile();
-    
-    return 0;
-}
+//int main() {
+//    // create string array to hold stock level data
+//    string stocks[10];
+//    double stock_details [10][8] = {0};
+//    loadQuotes(stocks, stock_details, 10);
+//    saveToFile(stocks, stock_details, 10);
+//    //displayStocks(stocks, 10);
+//    displayAll(stocks, stock_details, 10);
+//    loadFromFile();
+//    
+//    return 0;
+//}
 

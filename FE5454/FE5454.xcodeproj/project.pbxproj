@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3142BCBB1E5B66E600AE671C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3142BCBA1E5B66E600AE671C /* main.cpp */; };
 		3142BCCA1E5BFE1300AE671C /* homework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3142BCC71E5BFD5200AE671C /* homework.cpp */; };
+		317A83171E65019200C6C90F /* homework1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 317A83161E65019200C6C90F /* homework1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		3142BCB71E5B66E600AE671C /* FE5454 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FE5454; sourceTree = BUILT_PRODUCTS_DIR; };
 		3142BCBA1E5B66E600AE671C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = FE5454/main.cpp; sourceTree = "<group>"; };
 		3142BCC71E5BFD5200AE671C /* homework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homework.cpp; sourceTree = "<group>"; };
+		317A83161E65019200C6C90F /* homework1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = homework1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				3142BCC71E5BFD5200AE671C /* homework.cpp */,
+				317A83161E65019200C6C90F /* homework1.cpp */,
 			);
 			path = FE5454;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3142BCBB1E5B66E600AE671C /* main.cpp in Sources */,
+				317A83171E65019200C6C90F /* homework1.cpp in Sources */,
 				3142BCCA1E5BFE1300AE671C /* homework.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +262,7 @@
 				3142BCC01E5B66E600AE671C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
